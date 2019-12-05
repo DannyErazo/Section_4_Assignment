@@ -9,7 +9,7 @@ state = {
 
 characters : null,
 chars : null,
-result: ''
+
 
 
 }
@@ -24,11 +24,13 @@ const strings = event.target.value;
 const letters = strings.split('');
 
 
+
+
+
 this.setState({
 
   characters: numOfCharacters,
-  chars: letters,
- 
+  chars: letters  
 
 }
 
@@ -48,9 +50,6 @@ this.setState({
       const characters = words.split('');
 
       return characters
-
-      
-
 
     }
   
@@ -76,6 +75,7 @@ this.setState({
 <Validation length = {this.state.characters} />
 
 <Char letters = {this.state.chars} />
+
 
 
 
