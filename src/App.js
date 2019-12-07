@@ -12,6 +12,7 @@ chars : null,
 
 
 
+
 }
 
  counterHandler = (event) => {
@@ -27,10 +28,19 @@ const letters = strings.split('');
 
 
 
+
 this.setState({
 
   characters: numOfCharacters,
-  chars: letters  
+  chars: letters.map(component => {
+
+
+
+
+    return <Char letters = {component}/>
+
+
+  })  
 
 }
 
@@ -74,7 +84,7 @@ this.setState({
 
 <Validation length = {this.state.characters} />
 
-<Char letters = {this.state.chars} />
+<Char random = {this.state.chars} ></Char>
 
 
 

@@ -8,7 +8,15 @@ const Char = (props) => {
     return( 
 
 
-<div class = 'style' >{props.letters}</div>
+
+<div class = 'style' >
+    {props.letters} {props.random}
+</div>
+
+
+  
+
+
     )
         
 
